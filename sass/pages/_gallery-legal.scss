@@ -1,0 +1,142 @@
+/* First Layout */
+.first-layout {
+  background-color: $blue;
+  padding-top: 50px;
+  height: 722px;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  &__title {
+    margin-bottom: 250px;
+
+    h1 {
+      color: #fff;
+    }
+  }
+
+  &__img {
+    width: 65%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+/* About page */
+.about-service {
+  padding: 50px 0;
+
+  &__spacing {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  &__vertical-title {
+    font-family: $font-body;
+    text-transform: uppercase;
+    font-weight: normal;
+
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    transform: rotate(180deg);
+    font-size: 18px;
+    color: $blue;
+    opacity: 0.5;
+  }
+
+  &__gallery{
+    &_item{
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+
+  &__statue {
+    width: 170px;
+  }
+
+  &__title-icon {
+    display: flex;
+    align-items: center;
+
+    .icon {
+      margin-right: 20px;
+      position: relative;
+      top: -4px;
+    }
+
+    &_text {
+      font-size: 35px;
+      text-transform: uppercase;
+      font-family: $font-body;
+      font-weight: bold;
+    }
+  }
+
+  &__block-bg {
+    background-color: $blue;
+    border-radius: 10px;
+    padding: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_text {
+      width: 100%;
+      max-width: 840px;
+
+      p {
+        margin: 0;
+        padding: 0;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__office-img {
+    padding: 0;
+    img {
+      width: 100%;
+      height: 343px;
+      object-fit: cover;
+      object-position: 50% 10%;
+    }
+  }
+
+  &__opportunities{
+    padding: 70px;
+  
+    *{
+      color: white;
+    }
+
+    p{
+      font-size: 20px;
+    }
+
+    &_block{
+      width: 100%;
+      max-width: 300px;
+    }
+
+    &_title{
+      font-weight: bold;
+      font-size: 24px;
+      font-family: $font-body;
+    }
+
+    &_subtitle{
+      font-size: 20px;
+    }
+  }
+
+  &__instagram-content{
+    width: 100%;
+    max-width: 760px;
+  }
+}

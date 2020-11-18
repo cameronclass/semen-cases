@@ -1,0 +1,67 @@
+/* Fonts */
+@include font-face(Mont, "../fonts/Mont/Mont-Light", 300, normal);
+@include font-face(Mont, "../fonts/Mont/Mont-Book", 400, normal);
+@include font-face(Mont, "../fonts/Mont/Mont-Regular", 500, normal);
+@include font-face(Mont, "../fonts/Mont/Mont-Bold", bold, normal);
+
+@include font-face(TTFirsNeue, "../fonts/TTFirsNeue/TTFirsNeue-Regular", normal, normal);
+@include font-face(TTFirsNeue, "../fonts/TTFirsNeue/TTFirsNeue-Bold", bold, normal);
+
+/* Global Styles */
+html,
+body {
+  font-family: $font-body;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-title;
+  color: $black;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+p{
+  margin-bottom: 1em;
+}
+
+p,
+span {
+  color: $black;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+a {
+  font-family: $font-body;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+    border: none;
+  }
+}

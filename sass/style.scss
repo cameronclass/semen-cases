@@ -1,0 +1,20 @@
+/* Helpers */
+@import "variables";
+@import "helpers/mixins";
+@import "helpers/media-query";
+
+/* Template */
+@import "template";
+@import "classes";
+
+/* Sections for all pages */
+@import "sections/header";
+@import "sections/footer";
+@import "sections/icons";
+
+/* Pages */
+@import "pages/gallery-legal";
+
+/* Sliders */
+@import "common/sliders";
+

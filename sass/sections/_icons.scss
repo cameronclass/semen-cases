@@ -1,0 +1,9 @@
+.i-legal-hammer{
+  @include icon(url(../img/icons/legal-hammer.svg), 30px, 32px);
+}
+.i-legal-paper{
+  @include icon(url(../img/icons/legal-paper.svg), 30px, 32px);
+}
+.i-legal-face{
+  @include icon(url(../img/icons/legal-face.svg), 40px, 29px);
+}
