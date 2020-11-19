@@ -104,6 +104,11 @@ button {
     width: 50%;
     height: 2px;
     background-color: #F54528; }
+  .main-title__big {
+    font-size: 35px;
+    display: block; }
+    .main-title__big::after {
+      background-color: #207ADB; }
 
 .card-bordered {
   padding: 20px 30px;
@@ -394,5 +399,44 @@ button {
   .about-service__instagram-content {
     width: 100%;
     max-width: 760px; }
+  .about-service__instagram-posts_item {
+    -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden; }
+
+.slider {
+  padding-top: 50px;
+  position: relative; }
+  .slider__title {
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Mont", sans-serif;
+    margin-bottom: 30px; }
+  .slider__text {
+    font-size: 20px; }
+  .slider__image {
+    width: 335px;
+    height: 335px;
+    overflow: hidden;
+    border-radius: 5px; }
+  .slider .swiper-button-next, .slider .swiper-button-prev {
+    position: relative; }
+  .slider__controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .slider__controls_text {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: lowercase;
+      margin: 0 18px; }
 
 /* Sliders */
