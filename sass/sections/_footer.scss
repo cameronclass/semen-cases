@@ -1,47 +1,93 @@
-.footer{
-  &__links{
-
-    &_title{
+.footer {
+  &__links {
+    &_title {
       color: $grey;
       font-weight: bold;
       margin-bottom: 40px;
     }
 
-    &_list{
+    &_list {
       list-style-type: none;
       margin: 0;
       padding: 0;
 
-      li{
+      li {
         margin-bottom: 25px;
 
-        a{
+        a {
           color: $grey;
           font-size: 16px;
+          text-transform: capitalize;
 
-          &:hover{
+          &:hover {
             color: $black;
             text-decoration: none;
+          }
+
+          @include mobile{
+            font-size: 14px;
           }
         }
       }
     }
   }
-  &__form{
+
+  &__social {
+    ul {
+      li {
+        a {
+          text-transform: lowercase;
+          font-style: italic;
+        }
+      }
+    }
+    @include netbook {
+      .footer__links_title {
+        display: none;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+          margin-right: 40px;
+        }
+
+        @include mobile{
+          justify-content: space-between;
+
+          li{
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &__form {
     padding: 40px 57px 30px;
     background-color: $orange;
 
-    &_title{
+    @include mobile{
+      padding: 25px;
+    }
+
+    &_title {
       color: white;
       font-size: 24px;
       margin-bottom: 30px;
       font-style: italic;
+
+      @include mobile{
+        font-size: 18px;
+        width: 80%;
+      }
     }
 
-    &_input{
+    &_input {
       display: flex;
       position: relative;
-      label{
+      label {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -51,13 +97,17 @@
         font-size: 16px;
         transition: 300ms ease;
 
-        &.is-active{
+        &.is-active {
           top: -5px;
           left: 0;
           font-size: 11px;
         }
+
+        @include mobile{
+          font-size: 14px;
+        }
       }
-      input{
+      input {
         width: 100%;
         background-color: transparent;
         padding: 16px 40px 16px 0px;
@@ -68,28 +118,37 @@
         font-size: 18px;
         font-weight: bold;
 
-        &:focus{
+        &:focus {
           padding: 16px 40px 16px 0;
         }
       }
-      button{
+      button {
         position: absolute;
         right: 10px;
         top: 50%;
         transform: translateY(-50%);
 
-        img{
+        img {
           width: 23px;
         }
       }
     }
   }
-  &__copyright{
+
+  &__copyright {
     max-width: 490px;
     width: 100%;
     padding: 150px 0 50px;
     text-align: center;
     font-size: 11px;
     color: $grey;
+
+    @include netbook {
+      padding: 100px 0 50px;
+    }
+
+    @include mobile{
+      padding: 50px 0 30px;
+    }
   }
 }

@@ -8,6 +8,10 @@
 
   transition: 300ms ease-in-out;
 
+  @include netbook{
+    padding-top: 30px;
+  }
+
   &-active{
     padding: 15px 0;
     background-color: lighten($color: $blue, $amount: 2);
