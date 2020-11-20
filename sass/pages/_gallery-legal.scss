@@ -49,8 +49,12 @@
     }
 
     @include mobile {
-      width: 239%;
-      right: -95%;
+      bottom: -1px;
+      /* width: 239%;
+      right: -95%; */
+      width: 759px;
+      height: auto;
+      right: -250px;
     }
   }
 }
@@ -428,8 +432,7 @@
 }
 
 .other-cases {
-
-  @include mobile{
+  @include mobile {
     padding: 60px 0 90px;
   }
   .swiper-container {

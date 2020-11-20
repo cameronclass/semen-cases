@@ -497,8 +497,12 @@ input {
         width: 100%; } }
     @media screen and (max-width: 576px) {
       .first-layout__img {
-        width: 239%;
-        right: -95%; } }
+        bottom: -1px;
+        /* width: 239%;
+        right: -95%; */
+        width: 759px;
+        height: auto;
+        right: -250px; } }
 
 /* About page */
 .about-service {
