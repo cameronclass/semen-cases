@@ -13,7 +13,7 @@
       padding: 0;
 
       li{
-        margin-bottom: 15px;
+        margin-bottom: 25px;
 
         a{
           color: $grey;
@@ -28,7 +28,7 @@
     }
   }
   &__form{
-    padding: 40px 57px;
+    padding: 40px 57px 30px;
     background-color: $orange;
 
     &_title{
@@ -87,7 +87,7 @@
   &__copyright{
     max-width: 490px;
     width: 100%;
-    padding: 40px 0;
+    padding: 150px 0 50px;
     text-align: center;
     font-size: 11px;
     color: $grey;
