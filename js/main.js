@@ -29,6 +29,10 @@ $(document).ready(function () {
        $(this).parent().find("label").removeClass("is-active");
    /* $(this).parent().find("label").removeClass("is-active"); */
   });
+
+  AOS.init({
+    once: true,
+  });
 });
 
 
@@ -111,3 +115,13 @@ var swiper = new Swiper(".other-cases .swiper-container", {
     clickable: true,
   },
 });
+
+
+AOS.init({
+  once: true,
+});
+
+
+if (document.readyState == "complete") {
+  AOS.refresh();
+}
