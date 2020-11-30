@@ -120,7 +120,7 @@ var swiper = new Swiper(".other-cases .swiper-container", {
 AOS.init({
   once: true,
   anchorPlacement: "bottom-bottom",
-  duration: 400,
+  duration: 500,
 });
 
 
