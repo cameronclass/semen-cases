@@ -30,16 +30,42 @@ $(document).ready(function () {
    /* $(this).parent().find("label").removeClass("is-active"); */
   });
 
+});
+
+/* Aos animation */
+$(function () {
   AOS.init({
     once: true,
     anchorPlacement: "bottom-bottom",
     duration: 500,
   });
 
-  if (document.readyState == "complete") {
+  onElementHeightChange(document.body, function () {
     AOS.refresh();
-  }
+  });
+
+   /* if (document.readyState == "complete") {
+     AOS.refresh();
+   } */
 });
+
+function onElementHeightChange(elm, callback) {
+  var lastHeight = elm.clientHeight;
+  var newHeight;
+
+  (function run() {
+    newHeight = elm.clientHeight;
+    if (lastHeight !== newHeight) callback();
+    lastHeight = newHeight;
+
+    if (elm.onElementHeightChangeTimer) {
+      clearTimeout(elm.onElementHeightChangeTimer);
+    }
+
+    elm.onElementHeightChangeTimer = setTimeout(run, 200);
+  })();
+}
+
 
 
 /* Scroll */
