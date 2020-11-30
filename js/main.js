@@ -32,7 +32,13 @@ $(document).ready(function () {
 
   AOS.init({
     once: true,
+    anchorPlacement: "bottom-bottom",
+    duration: 500,
   });
+
+  if (document.readyState == "complete") {
+    AOS.refresh();
+  }
 });
 
 
@@ -115,15 +121,3 @@ var swiper = new Swiper(".other-cases .swiper-container", {
     clickable: true,
   },
 });
-
-
-AOS.init({
-  once: true,
-  anchorPlacement: "bottom-bottom",
-  duration: 500,
-});
-
-
-if (document.readyState == "complete") {
-  AOS.refresh();
-}
