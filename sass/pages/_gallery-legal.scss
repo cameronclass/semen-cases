@@ -300,6 +300,11 @@
     background-size: cover;
     background-image: url(../img/images/legal-office.jpg);
 
+    @include mobile {
+      background-attachment: scroll;
+      background-position: 48%;
+    }
+
     @include netbook {
       margin-bottom: 50px;
     }
@@ -316,7 +321,13 @@
     height: 560px;
     background-attachment: fixed;
     background-size: cover;
+    background-repeat: no-repeat;
     background-image: url(../img/images/parallax-1.jpg);
+
+    @include mobile {
+      background-attachment: scroll;
+      background-position: 48%;
+    }
 
     &_text {
       text-align: center;
