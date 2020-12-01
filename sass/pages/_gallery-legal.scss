@@ -308,7 +308,7 @@
       width: 100%;
       margin-top: 50px;
       margin-bottom: 50px;
-      @include mobile{
+      @include mobile {
         font-size: 20px;
       }
     }
@@ -321,7 +321,7 @@
       max-width: 700px;
       margin: 0 auto 60px;
 
-      @include mobile{
+      @include mobile {
         font-size: 20px;
       }
     }
@@ -356,6 +356,22 @@
       font-size: 20px;
       font-family: $font-body;
       line-height: 1.4;
+    }
+  }
+
+  &__content {
+    &_item {
+      margin-top: 35px;
+      img {
+        object-fit: contain;
+        object-position: center;
+        margin: auto;
+        box-shadow: $box-shadow;
+      }
+
+      @include mobile {
+        margin-top: 30px;
+      }
     }
   }
 
