@@ -62,7 +62,11 @@
         }
         &:hover{
           text-decoration: none;
+          &:after{
+            width: 100%;
+          }
         }
+
       }
 
       &_active{

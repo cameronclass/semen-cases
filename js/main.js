@@ -87,8 +87,4 @@ var swiper = new Swiper(".other-cases .swiper-container", {
   slidesPerView: "auto",
   loop: "true",
   spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
 });

@@ -18,6 +18,7 @@
   @include mobile {
     align-items: flex-start;
   }
+
   &__title {
     margin-bottom: 241px;
 
@@ -214,6 +215,7 @@
         font-family: $font-title;
         font-size: 24px;
         font-weight: bold;
+        transition: 250ms;
 
         a {
           color: #042b8c;
@@ -222,6 +224,11 @@
           font-weight: bold;
           text-transform: uppercase;
           font-family: $font-title;
+
+          &:hover{
+            text-decoration: none;
+            border: none;
+          }
         }
 
         @include mobile {
@@ -416,6 +423,11 @@
           margin-bottom: 30px;
           font-size: 30px;
 
+          @include mobile {
+            font-size: 20px;
+            padding-left: 15px;
+          }
+
           &::before {
             content: counter(my-awesome-counter);
             color: $orange;
@@ -426,8 +438,24 @@
             top: -5px;
             text-align: center;
             font-family: $font-title;
+
+            @include mobile {
+              font-size: 30px;
+            }
           }
         }
+      }
+    }
+
+    &_test{
+      display: flex;
+      overflow-x: scroll;
+      
+      &_item{
+        min-width: 218px;
+        height: 386px;
+        overflow: hidden;
+        margin-right: 40px;
       }
     }
   }
@@ -684,6 +712,9 @@
       @include mobile {
         font-size: 14px;
       }
+    }
+    &:hover {
+      text-decoration: none;
     }
   }
 }
