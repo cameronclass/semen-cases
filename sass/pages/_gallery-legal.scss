@@ -156,6 +156,10 @@
       text-align: right;
       font-family: $font-body;
       margin-top: 0;
+
+      @include mobile {
+        font-size: 18px;
+      }
     }
   }
 
@@ -297,9 +301,61 @@
   }
 
   &__parallax {
+    &_text {
+      text-align: center;
+      font-size: 24px;
+      font-weight: normal;
+      width: 100%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      @include mobile{
+        font-size: 20px;
+      }
+    }
+    &_title {
+      color: $blue;
+      text-align: center;
+      font-weight: bold;
+      font-size: 35px;
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto 60px;
+
+      @include mobile{
+        font-size: 20px;
+      }
+    }
     img {
       height: 563px;
       object-fit: cover;
+    }
+  }
+
+  &__ecosystem {
+    &_main-title {
+      font-size: 35px;
+    }
+    &_block {
+      width: 100%;
+      max-width: 500px;
+    }
+    &_title {
+      color: $blue;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 20px;
+      font-family: $font-body;
+      margin-bottom: 25px;
+    }
+    &_subtitle {
+      font-family: $font-body;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    &_text {
+      font-size: 20px;
+      font-family: $font-body;
+      line-height: 1.4;
     }
   }
 
