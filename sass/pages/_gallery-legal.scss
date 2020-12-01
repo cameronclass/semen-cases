@@ -100,6 +100,32 @@
     }
   }
 
+  &__tasks {
+    margin-top: 20px;
+    &_block {
+      display: flex;
+      margin-bottom: 60px;
+
+      @include mobile {
+        margin-bottom: 30px;
+      }
+    }
+    &_icon {
+      min-width: 28px;
+      margin-right: 20px;
+      margin-top: 4px;
+    }
+    &_text {
+      width: 100%;
+      max-width: 400px;
+      font-size: 20px;
+
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+  }
+
   &__gallery {
     &_item {
       border-radius: 10px;
@@ -117,6 +143,22 @@
     }
   }
 
+  &__blockquote {
+    width: 100%;
+    max-width: 1150px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-bottom: 5px;
+
+    &_name {
+      font-weight: bold;
+      font-size: 25px;
+      text-align: right;
+      font-family: $font-body;
+      margin-top: 0;
+    }
+  }
+
   &__title-icon {
     display: flex;
     align-items: center;
@@ -131,7 +173,7 @@
     &_text {
       font-size: 35px;
       text-transform: uppercase;
-      font-family: $font-body;
+      font-family: $font-title;
       font-weight: bold;
 
       @include mobile {
@@ -148,6 +190,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
 
     @include mobile {
       padding: 60px 20px;
@@ -163,6 +207,73 @@
         color: white;
         text-align: center;
         text-transform: uppercase;
+        font-family: $font-title;
+        font-size: 24px;
+        font-weight: bold;
+
+        a {
+          color: #042b8c;
+          font-size: 24px;
+          border-bottom: 1px solid;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-family: $font-title;
+        }
+
+        @include mobile {
+          font-size: 20px;
+
+          a {
+            font-size: 20px;
+          }
+        }
+      }
+      &-right {
+        margin-left: auto;
+        width: 70%;
+        max-width: 100%;
+        p {
+          text-align: left;
+        }
+
+        @include netbook {
+          width: 100%;
+          position: relative;
+          z-index: 1;
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    &_img {
+      position: absolute;
+      width: 30%;
+      left: 0;
+      bottom: 0;
+
+      img {
+        width: 361px;
+      }
+
+      @include laptop {
+        left: -3%;
+      }
+
+      @include netbook {
+        margin-top: -240px;
+        width: 100%;
+        position: relative;
+
+        img {
+          width: 90%;
+          margin: auto;
+        }
+      }
+
+      @include mobile {
+        margin-top: -170px;
       }
     }
   }
@@ -170,6 +281,8 @@
   &__office-img {
     padding: 0;
     margin-bottom: 100px;
+    width: 100%;
+    margin-top: 0;
 
     @include netbook {
       margin-bottom: 50px;
@@ -177,9 +290,16 @@
 
     img {
       width: 100%;
-      height: 343px;
+      height: 403px;
       object-fit: cover;
-      object-position: 50% 10%;
+      object-position: top;
+    }
+  }
+
+  &__parallax {
+    img {
+      height: 563px;
+      object-fit: cover;
     }
   }
 
@@ -206,68 +326,15 @@
 
     &_title {
       font-weight: bold;
-      font-size: 24px;
-      font-family: $font-body;
+      font-size: 25px;
     }
 
     &_subtitle {
       font-size: 20px;
       margin-bottom: 30px;
-    }
-  }
-
-  &__fz-32 {
-    * {
-      font-size: 32px;
+      text-transform: uppercase;
       font-family: $font-body;
-
-      @include netbook {
-        font-size: 24px;
-      }
-
-      @include mobile {
-        font-size: 20px;
-      }
-    }
-  }
-
-  &__instagram-content {
-    width: 100%;
-    max-width: 745px;
-  }
-
-  &__instagram-posts {
-    &_item {
-      box-shadow: $box-shadow;
-      border-radius: 5px;
-      overflow: hidden;
-    }
-  }
-
-  &__workers {
-    margin-top: 65px;
-    margin-bottom: 65px;
-
-    overflow: auto;
-
-    &::-webkit-scrollbar {
-      width: 10px;
-    }
-
-    &::-webkit-scrollbar-track {
-      background: transparent;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background: transparent;
-    }
-
-    &::-webkit-scrollbar-thumb:hover {
-      background: transparent;
-    }
-
-    img {
-      width: 1036px;
+      font-weight: 600;
     }
   }
 }

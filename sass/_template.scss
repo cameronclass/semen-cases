@@ -2,6 +2,7 @@
 @include font-face(Mont, "../fonts/Mont/Mont-Light", 300, normal);
 @include font-face(Mont, "../fonts/Mont/Mont-Book", 400, normal);
 @include font-face(Mont, "../fonts/Mont/Mont-Regular", 500, normal);
+@include font-face(Mont, "../fonts/Mont/Mont-Semibold", 600, normal);
 @include font-face(Mont, "../fonts/Mont/Mont-Bold", bold, normal);
 
 @include font-face(TTFirsNeue, "../fonts/TTFirsNeue/TTFirsNeue-Regular", normal, normal);
@@ -65,8 +66,20 @@ strong {
   font-weight: bold;
 }
 
+blockquote{
+  font-style: italic;
+  text-align: right;
+  font-size: 25px;
+}
+
 a {
   font-family: $font-body;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -104,3 +117,5 @@ input{
     padding-right: 20px;
   }
 }
+
+

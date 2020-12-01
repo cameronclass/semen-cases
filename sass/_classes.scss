@@ -3,12 +3,12 @@
   text-transform: uppercase;
 
   padding: 5px 0 15px;
-  border-bottom: 2px solid #dfdfdf;
+  /* border-bottom: 2px solid #dfdfdf; */
   position: relative;
   display: inline-block;
   line-height: 1.4;
 
-  &::after {
+  /* &::after {
     content: "";
     position: absolute;
     bottom: -2px;
@@ -17,23 +17,23 @@
     width: 50%;
     height: 2px;
     background-color: $red;
-  }
+  } */
 
-  &__big{
+  &__big {
     font-size: 35px;
     display: block;
 
-    @include mobile{
+    @include mobile {
       font-size: 24px;
     }
 
-    &::after{
+    &::after {
       background-color: $blue;
     }
   }
 }
 
-.card-bordered{
+.card-bordered {
   padding: 20px 30px;
   border: 1px solid $border;
   border-radius: 2px;
@@ -41,37 +41,41 @@
   align-items: center;
   justify-content: center;
 
-  img{
+  img {
     height: 255px;
     object-fit: contain;
 
-    @include netbook{
+    @include netbook {
       height: auto;
     }
   }
-
-
 }
 
-.image-with-shadow{
+.image-with-shadow {
   overflow: hidden;
   border-radius: 5px;
   box-shadow: $box-shadow;
 
-  img{
-    
+  img {
   }
 }
 
 .color-red {
   color: $red;
 }
-.bg-blue{
+.bg-blue {
   background-color: $blue;
 }
-.bg-grey{
+.bg-grey {
   background-color: $light-grey;
 }
-.font-bold{
+.font-bold {
   font-weight: bold;
 }
+.h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: 35px 0;
+}
+
+
