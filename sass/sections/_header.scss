@@ -49,6 +49,7 @@
         border-bottom: 2px solid #ffffff30;
         position: relative;
         display: inline-block;
+        transition: 300ms ease;
 
         &::after{
           content: "";
@@ -59,11 +60,14 @@
           width: 50%;
           height: 2px;
           background-color: white;
+          transition: 300ms ease;
         }
         &:hover{
           text-decoration: none;
+          color: $orange;
           &:after{
             width: 100%;
+            background-color: $orange;
           }
         }
 

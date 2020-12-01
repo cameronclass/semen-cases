@@ -293,7 +293,11 @@
     padding: 0;
     margin-bottom: 100px;
     width: 100%;
-    margin-top: 0;
+
+    height: 333px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(../img/images/legal-office.jpg);
 
     @include netbook {
       margin-bottom: 50px;
@@ -308,6 +312,11 @@
   }
 
   &__parallax {
+    height: 560px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(../img/images/parallax-1.jpg);
+
     &_text {
       text-align: center;
       font-size: 24px;
