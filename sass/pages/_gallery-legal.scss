@@ -332,9 +332,6 @@
   }
 
   &__ecosystem {
-    &_main-title {
-      font-size: 35px;
-    }
     &_block {
       width: 100%;
       max-width: 500px;
@@ -371,6 +368,66 @@
 
       @include mobile {
         margin-top: 30px;
+      }
+    }
+
+    &_title {
+      width: 100%;
+      max-width: 670px;
+      text-align: center;
+      margin: 100px auto 40px;
+    }
+
+    &_plan {
+      width: 100%;
+      max-width: 993px;
+      margin: 100px auto 80px;
+    }
+  }
+
+  &__tools {
+    padding: 40px 0;
+    background-color: $light-grey;
+
+    &_title {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 60px;
+      width: 100%;
+      max-width: 870px;
+    }
+
+    &_list {
+      width: 100%;
+      max-width: 870px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+
+      ol {
+        counter-reset: my-awesome-counter;
+        list-style: none;
+
+        li {
+          counter-increment: my-awesome-counter;
+          position: relative;
+          padding-left: 30px;
+          margin-bottom: 30px;
+          font-size: 30px;
+
+          &::before {
+            content: counter(my-awesome-counter);
+            color: $orange;
+            font-weight: bold;
+            font-size: 40px;
+            position: absolute;
+            left: -40px;
+            top: -5px;
+            text-align: center;
+            font-family: $font-title;
+          }
+        }
       }
     }
   }
