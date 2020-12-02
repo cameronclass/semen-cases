@@ -1,6 +1,6 @@
 /* First Layout */
 .first-layout {
-  background-color: $blue;
+  background-color: #3b8adc;
   padding-top: 50px;
   height: 722px;
 
@@ -821,4 +821,10 @@
       text-decoration: none;
     }
   }
+}
+
+// Hide Opera detach video popup button
+// May remove other useful browser popups, inserted after "body" element.
+html > div[style] {
+  display: none !important;
 }
