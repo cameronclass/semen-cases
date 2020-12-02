@@ -21,6 +21,8 @@
 
   &__title {
     margin-bottom: 241px;
+    position: relative;
+    z-index: 2;
 
     h1 {
       color: #fff;
@@ -57,6 +59,21 @@
       width: 759px;
       height: auto;
       right: -250px;
+    }
+  }
+
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 730px;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+
+    @include mobile {
+      height: 619px;
+      object-position: 82% 100%;
     }
   }
 }
