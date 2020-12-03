@@ -9,7 +9,7 @@ let webpage = document.querySelector("html");
 document.addEventListener("DOMContentLoaded", hidePreloader); */
 
 $(document).ready(function () {
-  $(window).scroll(function () {
+ /*  $(window).scroll(function () {
     let scroll = $(window).scrollTop();
 
     if (scroll >= 80) {
@@ -17,7 +17,7 @@ $(document).ready(function () {
     } else {
       $(".header").removeClass("header-active");
     }
-  });
+  }); */
 
   /* Footer Form Focus Animation */
   $(".footer__form_input input").focus(function () {

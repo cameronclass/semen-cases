@@ -1,5 +1,5 @@
 .header{
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 10;
   padding: 41px 0 15px;
@@ -14,7 +14,7 @@
 
   &-active{
     padding: 15px 0;
-    background-color: lighten($color: $blue, $amount: 2);
+    background-color: transparent;
   }
 
   &__logo{
@@ -40,16 +40,16 @@
       align-items: center;
     }
     &_item{
-      margin-left: 22px;
-      margin-right: 22px;
+      margin-left: 25px;
+      margin-right: 25px;
       a{
         color: white;
-        font-weight: 300;
+        font-weight: 400;
         padding: 5px 0 12px;
         border-bottom: 2px solid #ffffff30;
         position: relative;
         display: inline-block;
-        transition: 300ms ease;
+        transition: color .1s ease-in-out;
 
         &::after{
           content: "";
@@ -57,10 +57,10 @@
           bottom: -2px;
           left: 0;
           display: inline-block;
-          width: 50%;
+          width: 0%;
           height: 2px;
           background-color: white;
-          transition: 300ms ease;
+          transition: 250ms ease-in-out;
         }
         &:hover{
           text-decoration: none;
