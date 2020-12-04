@@ -19,6 +19,12 @@ $(document).ready(function () {
     }
   }); */
 
+  $(".js-menu-open").click( function (){
+    $(".js-menu").toggleClass("menu-opened");
+    $("body").toggleClass("lock");
+    $(".hamburger_menu").toggleClass("hamburger_menu_active");
+  });
+
   /* Footer Form Focus Animation */
   $(".footer__form_input input").focus(function () {
     $(this).parent().find("label").addClass("is-active");
@@ -29,6 +35,8 @@ $(document).ready(function () {
       $(this).parent().find("label").removeClass("is-active");
     /* $(this).parent().find("label").removeClass("is-active"); */
   });
+
+
 });
 
 /* Aos animation */
