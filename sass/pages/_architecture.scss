@@ -1,0 +1,356 @@
+.architecture {
+  margin-bottom: 100px;
+  p {
+    font-size: 35px;
+    font-weight: 500;
+
+    @include mobile {
+      font-size: 15px;
+    }
+  }
+
+  &__slider {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .swiper-slide {
+      width: 80%;
+      height: 100%;
+      max-height: 600px;
+    }
+
+    &_arrow{
+      
+    }
+  }
+
+  &__about {
+    position: relative;
+    padding-top: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    @include mobile {
+      margin-top: 0;
+    }
+
+    &_icon {
+      position: absolute;
+      z-index: 1;
+    }
+
+    &_1 {
+      top: -10px;
+      left: -40px;
+      width: 35px;
+      height: 35px;
+
+      @include netbook {
+        right: 30px;
+        left: inherit;
+      }
+    }
+    &_2 {
+      bottom: 0px;
+      left: 160px;
+      width: 19px;
+      height: 19px;
+
+      @include netbook {
+        right: 70px;
+        left: inherit;
+        bottom: 0;
+      }
+    }
+    &_3 {
+      top: -30px;
+      left: 460px;
+      width: 19px;
+      height: 19px;
+
+      @include netbook {
+        display: none;
+      }
+    }
+    &_4 {
+      bottom: 120px;
+      right: 180px;
+      width: 33px;
+      height: 33px;
+
+      @include netbook {
+        bottom: -65px;
+        left: 30px;
+        right: inherit;
+      }
+    }
+    &_5 {
+      top: 0px;
+      right: 0px;
+      width: 19px;
+      height: 19px;
+
+      @include netbook {
+        top: -40px;
+        left: 60px;
+        right: inherit;
+      }
+    }
+    &_6 {
+      bottom: -75px;
+      right: 0px;
+      width: 50px;
+      height: 50px;
+
+      @include netbook {
+        display: none;
+      }
+    }
+
+    &-last {
+      position: relative;
+      &_1 {
+        top: -80px;
+        left: -20px;
+        width: 35px;
+
+        @include netbook {
+          left: inherit;
+          right: 10px;
+          top: -20px;
+        }
+      }
+      &_2 {
+        top: -100px;
+        right: 420px;
+        width: 19px;
+
+        @include netbook {
+          right: inherit;
+          left: 50px;
+          top: -50px;
+        }
+      }
+      &_3 {
+        bottom: 0px;
+        left: 350px;
+        width: 19px;
+
+        @include netbook {
+          left: 150px;
+        }
+      }
+      &_4 {
+        width: 33px;
+        right: -50px;
+        top: -30px;
+        @include netbook{
+          right: 80px;
+          top: inherit;
+          bottom: -40px;
+        }
+      }
+      &_5 {
+        width: 19px;
+        right: 30px;
+        bottom: 80px;
+        @include laptop{
+          display: none;
+        }
+      }
+      &_6 {
+        width: 19px;
+        left: 400px;
+        bottom: -50px;
+
+        @include netbook {
+          display: none;
+        }
+      }
+      &_7 {
+        width: 50px;
+        right: 0px;
+        bottom: 50px;
+
+        @include netbook {
+          display: none;
+        }
+      }
+    }
+
+    &_logo {
+      img {
+        height: 400px;
+        max-height: 800px;
+        object-fit: cover;
+      }
+    }
+
+    &_dark-blue {
+      background-color: $dark-blue;
+      padding: 100px 0;
+      position: relative;
+
+      @include mobile {
+        padding: 70px 0;
+      }
+      p {
+        color: white;
+      }
+
+      &_text {
+        text-align: center;
+
+        @include mobile {
+          text-align: left;
+        }
+
+        &-2 {
+          text-align: center;
+
+          @include mobile {
+            width: 250px;
+            max-width: 100%;
+            margin: auto;
+          }
+        }
+      }
+
+      &_img {
+        width: 100%;
+        max-width: 850px;
+        margin: auto;
+      }
+
+      &_1 {
+        width: 97px;
+        height: 97px;
+        right: -120px;
+        bottom: 80px;
+
+        @include netbook {
+          right: 50px;
+          bottom: -70px;
+          width: 75px;
+        }
+
+        @include mobile {
+          right: 50px;
+          bottom: -70px;
+          width: 35px;
+        }
+      }
+
+      &_2 {
+        width: 97px;
+        height: 97px;
+        left: 80px;
+        bottom: 120px;
+
+        @include netbook {
+          width: 75px;
+          bottom: -70px;
+          left: 20px;
+        }
+
+        @include mobile {
+          width: 25px;
+          bottom: -70px;
+          left: 20px;
+        }
+      }
+      &_3 {
+        width: 97px;
+        height: 97px;
+        left: 80px;
+        top: 0px;
+
+        @include netbook {
+          width: 75px;
+          top: inherit;
+          bottom: 50px;
+          right: 60px;
+          left: inherit;
+        }
+
+        @include mobile {
+          width: 25px;
+          top: inherit;
+          bottom: 20px;
+          right: 60px;
+          left: inherit;
+        }
+      }
+
+      &_left {
+        width: 250px;
+        top: 180px;
+        left: 0;
+
+        @include netbook {
+          width: 160px;
+          top: inherit;
+          bottom: 0;
+        }
+
+        @include mobile {
+          width: 90px;
+          top: inherit;
+          bottom: 0;
+        }
+      }
+      &_right {
+        top: -50px;
+        right: 0;
+        width: 300px;
+
+        @include netbook {
+          width: 220px;
+        }
+
+        @include mobile {
+          width: 120px;
+        }
+      }
+
+      &_bottom {
+        background-image: url(../img/images/archtecture/line-bottom.svg);
+        background-repeat: repeat-x;
+        background-position: bottom;
+        padding-bottom: 130px;
+        width: 100%;
+
+        @include mobile {
+          background-size: contain;
+        }
+      }
+
+      &_padding {
+        padding-top: 160px;
+
+        @include mobile {
+          padding-top: 50px;
+        }
+      }
+
+      &_darker {
+        background-color: #1c273d;
+        img {
+          width: 100%;
+          max-width: 1200px;
+          margin: auto;
+        }
+      }
+    }
+
+    &_light-grey {
+      padding: 150px 0;
+      background-color: #ededed;
+    }
+  }
+
+  &__img {
+    height: 100%;
+    max-height: 1000px;
+    object-fit: cover;
+  }
+}

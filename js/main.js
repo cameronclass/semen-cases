@@ -96,3 +96,24 @@ var swiper = new Swiper(".other-cases .swiper-container", {
   loop: "true",
   spaceBetween: 30,
 });
+
+var swiper = new Swiper(".architecture__slider-1 .swiper-container", {
+  slidesPerView: "auto",
+  loop: "false",
+  spaceBetween: 30,
+
+  navigation: {
+    nextEl: ".architecture__slider-1 .swiper-button-next",
+    prevEl: ".architecture__slider-1 .swiper-button-prev",
+  },
+});
+var swiper = new Swiper(".architecture__slider-2 .swiper-container", {
+  slidesPerView: "auto",
+  loop: "false",
+  spaceBetween: 30,
+
+  navigation: {
+    nextEl: ".architecture__slider-2 .swiper-button-next",
+    prevEl: ".architecture__slider-2 .swiper-button-prev",
+  },
+});

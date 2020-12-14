@@ -71,6 +71,15 @@
     object-fit: cover;
     object-position: bottom;
 
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 730px;
+      width: 100%;
+      object-fit: cover;
+      object-position: bottom;
+    }
     @include mobile {
       height: 619px;
       object-position: 82% 100%;
@@ -80,7 +89,7 @@
 
 /* About page */
 .about-service {
-  padding: 100px 0;
+  padding: 100px 0 0;
 
   @include netbook {
     padding: 50px 0;
