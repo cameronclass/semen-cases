@@ -12,14 +12,57 @@
   &__slider {
     margin-top: 100px;
     margin-bottom: 100px;
+    position: relative;
+
+    @include mobile{
+      margin-top: 70px;
+      margin-bottom: 70px;
+    }
     .swiper-slide {
       width: 80%;
       height: 100%;
-      max-height: 600px;
+      max-height: 720px;
+
+      @include mobile{
+        width: 85%;
+        max-height: 600px;
+      }
     }
 
-    &_arrow{
-      
+    &_arrow {
+      display: flex;
+      margin-top: 40px;
+
+      position: absolute;
+      bottom: 40px;
+      left: 50px;
+      z-index: 6;
+
+      @include mobile {
+        justify-content: center;
+        position: relative;
+        bottom: inherit;
+        left: inherit;
+      }
+      &_block {
+        border: 1px solid $dark-blue;
+        padding: 3px;
+        display: flex;
+
+        @include mobile {
+          justify-content: center;
+        }
+
+        > div {
+          background-color: $dark-blue;
+          padding: 5px 24px;
+        }
+      }
+
+      .swiper-button-next:after,
+      .swiper-button-prev:after {
+        background-image: url(../img/icons/slider-right-2.svg);
+      }
     }
   }
 
@@ -143,7 +186,7 @@
         width: 33px;
         right: -50px;
         top: -30px;
-        @include netbook{
+        @include netbook {
           right: 80px;
           top: inherit;
           bottom: -40px;
@@ -153,7 +196,7 @@
         width: 19px;
         right: 30px;
         bottom: 80px;
-        @include laptop{
+        @include laptop {
           display: none;
         }
       }
@@ -179,9 +222,11 @@
 
     &_logo {
       img {
-        height: 400px;
         max-height: 800px;
         object-fit: cover;
+        @include mobile {
+          height: 400px;
+        }
       }
     }
 
